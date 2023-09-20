@@ -14,7 +14,7 @@ Each model result contains, for `N` as the 2nd largest rank (the rank running th
 `cfg-hpo-settings.sh`::
 The input settings used for the test
 
-`cfg-hpo-parameter-space.json'::
+`cfg-hpo-parameter-space.json`::
 The input HPO search space for the test
 
 `best-N.json`::
