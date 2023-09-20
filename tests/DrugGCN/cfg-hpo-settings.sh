@@ -28,8 +28,7 @@ then
 	echo Host Lambda
 	# Lambda Settings
  	export CANDLE_CUDA_OFFSET=2
- 	export CANDLE_DATA_DIR=/homes/wilke/IMPROVE/HPO/tmp 
-	# /software/improve/data_dir/ 
+ 	export CANDLE_DATA_DIR=/software/improve/data_dir/
 	# TEST_DATA_DIR
 elif [ ! -z `hostname | grep polaris` ] ; then
 	echo Host Polaris
