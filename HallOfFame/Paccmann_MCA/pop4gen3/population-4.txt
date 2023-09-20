@@ -1,0 +1,1 @@
+{"learning_rate": 7.868930290332264e-05, "batch_size": 256, "epochs": 2};{"learning_rate": 5.8530380030415256e-05, "batch_size": 256, "epochs": 2};{"learning_rate": 7.741858108113022e-05, "batch_size": 256, "epochs": 2};{"learning_rate": 5.8530380030415256e-05, "batch_size": 256, "epochs": 2}

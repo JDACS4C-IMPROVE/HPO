@@ -6,3 +6,31 @@ Best HPO results by model.
 All results created with the configurations in `HPO/tests/MODEL` unless otherwise noted.
 
 `pop4gen3` means the population size started at 4, and the HPO was run for 3 generations.  We will use this as a standard small debug test case.  We are running 2 epochs.
+
+== Files
+
+Each model result contains, for `N` as the 2nd largest rank (the rank running the DEAP algorithm):
+
+`cfg-hpo-settings.sh`::
+The input settings used for the test
+
+`cfg-hpo-parameter-space.json'::
+The input HPO search space for the test
+
+`best-N.json`::
+The JSON fragment with the best hyperparameters
+
+`fitness-N.txt`::
+The float value for the best fitness value for the case in `best-N.json`
+
+`out-N.txt`::
+The DEAP stdout log
+
+`deap-N.log`::
+The DEAP log data structure- basically a table with per-iteration statistics
+
+`population-N.txt`::
+The JSON fragments for the population in the final iteration
+
+`fitnesses-N.txt`::
+The fitness floats for each member of the final population
