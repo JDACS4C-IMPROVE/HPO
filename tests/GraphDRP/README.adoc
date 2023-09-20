@@ -1,0 +1,6 @@
+
+Run with:
+
+----
+$ supervisor lambda GA tests/GraphDRP/cfg-nightly.sh
+----
