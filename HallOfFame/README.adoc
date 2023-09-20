@@ -1,0 +1,8 @@
+
+= Hall of Fame
+
+Best HPO results by model.
+
+All results created with the configurations in `HPO/tests/MODEL` unless otherwise noted.
+
+`pop4gen3` means the population size started at 4, and the HPO was run for 3 generations.  We will use this as a standard small debug test case.  We are running 2 epochs.
