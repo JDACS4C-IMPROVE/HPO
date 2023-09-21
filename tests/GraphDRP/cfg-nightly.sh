@@ -1,6 +1,11 @@
-source_cfg -v ${BASE_DIR}/tests/GraphDRP/cfg-graphdrp-hpo-settings.sh
 
+export MODEL_NAME=${HPO_IMAGE_DIR}/GraphDRP.sif
+
+MODEL=$(basname $MODEL_NAME .sif)
+
+source_cfg -v ${HPO_BASE_DIR}/tests/${MODEL}/cfg-hpo-settings.sh
 export CANDLE_MODEL_TYPE="SINGULARITY"
-export MODEL_NAME=${IMAGE_PATH}/GraphDRP.sif
-export PARAM_SET_FILE=${BASE_DIR}/tests/GraphDRP/hpo-parameter-space.json
+export PARAM_SET_FILE=${HPO_BASE_DIR}/tests/${MODEL}/cfg-hpo-parameter-space.json
+export CANDLE_DATA_DIR=${HPO_DATA_DIR}/${MODEL}
 
+mkdir -p ${CANDLE_DATA_DIR}
