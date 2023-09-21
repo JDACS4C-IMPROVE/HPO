@@ -9,6 +9,7 @@ Create global config file:
 git clone
 cd HPO
 ./setup
+source config/hpo.env
 ```
 
 This will create an hpo.env file in the config folder and source the environment. 
