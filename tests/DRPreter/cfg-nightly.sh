@@ -1,7 +1,7 @@
 
 export MODEL_NAME=${HPO_IMAGE_DIR}/DRPreter.sif
 
-MODEL=$(basname $MODEL_NAME .sif)
+MODEL=$(basename $MODEL_NAME .sif)
 
 export CANDLE_MODEL_TYPE="SINGULARITY"
 export PARAM_SET_FILE=${HPO_BASE_DIR}/tests/${MODEL}/cfg-hpo-parameter-space.json
