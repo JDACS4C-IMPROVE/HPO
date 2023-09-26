@@ -27,14 +27,12 @@ if [ ! -z `hostname | grep lambda` ]
 then 
 	echo Host Lambda
 	# Lambda Settings
- 	export CANDLE_CUDA_OFFSET=2
- 	export CANDLE_DATA_DIR=/software/improve/data_dir/
+ 	# export CANDLE_CUDA_OFFSET=2
 	# TEST_DATA_DIR
 elif [ ! -z `hostname | grep polaris` ] ; then
 	echo Host Polaris
 	# Polaris Settings
 	export QUEUE="debug"
-	export CANDLE_DATA_DIR=/home/<user>/data_dir
 else
 	echo Unknown system, no machine specific config
 fi

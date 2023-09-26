@@ -1,0 +1,41 @@
+#!/bin/bash
+
+
+# get options
+while getopts hi:d:b: option; do
+	case "${option}"
+    		in
+			h) 
+	             	   HELP=1
+        	    	   ;;
+			i) HPO_IMAGE_DIR=${OPTARG};;
+	        	d) HPO_DATA_DIR=${OPTARG};;
+			b) HPO_BASE_DIR=${OPTARG};;
+			*) echo Option not supported ;;
+	esac
+done
+
+HPO_IMAGE_DIR=${HPO_IMAGE_DIR:-`pwd`/build}
+HPO_DATA_DIR=${HPO_DATA_DIR:-`pwd`/tmp}
+HPO_BASE_DIR=${HPO_BASE_DIR:-`pwd`}
+
+mkdir -p ./config
+if [ -f config/hpo.env ] 
+
+then
+	    echo Config exists, please remove config/hpo.env if you want to create a new config
+	    echo Loading config/hpo.env
+else
+	echo Creating config file config/hpo.env
+
+cat  << EOF > config/hpo.env
+export HPO_IMAGE_DIR=${HPO_IMAGE_DIR}
+export HPO_DATA_DIR=${HPO_DATA_DIR}
+export HPO_BASE_DIR=${HPO_BASE_DIR}
+EOF
+
+	echo Please modify config/hpo.env to change locations.
+fi
+
+cat config/hpo.env
+source config/hpo.env
