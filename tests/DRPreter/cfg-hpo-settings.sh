@@ -27,7 +27,7 @@ if [ ! -z `hostname | grep lambda` ]
 then 
 	echo Host Lambda
 	# Lambda Settings
- 	export CANDLE_CUDA_OFFSET=2
+ 	# export CANDLE_CUDA_OFFSET=2
 	# TEST_DATA_DIR
 elif [ ! -z `hostname | grep polaris` ] ; then
 	echo Host Polaris

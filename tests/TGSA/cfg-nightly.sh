@@ -1,5 +1,5 @@
 
-export MODEL_NAME=${HPO_IMAGE_DIR}/DrugGCN.sif
+export MODEL_NAME=${HPO_IMAGE_DIR}/TGSA.sif
 
 MODEL=$(basename $MODEL_NAME .sif)
 
