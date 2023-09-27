@@ -1,0 +1,6 @@
+source_cfg -v cfg-graphdrp-hpo-settings.sh
+
+export CANDLE_MODEL_TYPE="SINGULARITY"
+export MODEL_NAME={{IMAGE_DIR}}/GrapDRP.sif
+export PARAM_SET_FILE={{REPO_DIR}}/tests/GraphDRP/hpo-parameter-space.json
+
