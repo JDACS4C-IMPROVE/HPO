@@ -1,5 +1,5 @@
 
-export MODEL_NAME=${HPO_IMAGE_DIR}/GraphDRP.sif
+export MODEL_NAME=${HPO_IMAGE_DIR}/SWnet.sif
 
 MODEL=$(basename $MODEL_NAME .sif)
 
