@@ -5,7 +5,13 @@ Best HPO results by model.
 
 All results created with the configurations in `HPO/tests/MODEL` unless otherwise noted.
 
-`pop4gen3` means the population size started at 4, and the HPO was run for 3 generations.  We will use this as a standard small debug test case.  We are running 2 epochs.
+== Campaigns
+
+Population size started at `P`, and the HPO was run for `G` generations.
+
+* Lambda:  P=4, G=3
+* Polaris Debug: P=16, G=4
+* Polaris: P=80, G=10
 
 == Files
 
@@ -34,3 +40,12 @@ The JSON fragments for the population in the final iteration
 
 `fitnesses-N.txt`::
 The fitness floats for each member of the final population
+
+`hpo.csv`::
+From https://github.com/ECP-CANDLE/Supervisor/tree/develop/scripts#hpo-table
+
+== Plots
+
+We can reuse these tools:
+
+https://github.com/emews/mela/tree/master/deap
