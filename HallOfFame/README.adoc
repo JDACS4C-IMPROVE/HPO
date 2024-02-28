@@ -49,3 +49,55 @@ From https://github.com/ECP-CANDLE/Supervisor/tree/develop/scripts#hpo-table
 We can reuse these tools:
 
 https://github.com/emews/mela/tree/master/deap
+
+== Examples
+
+=== Installation
+
+. Clone Supervisor branch `develop`
+. Add `Supervisor/bin` to `PATH`
+
+=== LGBM
+
+==== Preprocess
+
+Set `CANDLE_DATA_DIR` and run:
+
+----
+IMAGE=/software/improve/images/lgbm_0.6.0.sif
+RAW_DATA_DIR=$CANDLE_DATA_DIR
+DATA_SOURCE=gCSI
+
+A=( --bind ${RAW_DATA_DIR}:/candle_data_dir
+    ${IMAGE} preprocess.sh /candle_data_dir \
+             --train_split_file ${DATA_SOURCE}_split_0_train.txt \
+             --val_split_file ${DATA_SOURCE}_split_0_val.txt \
+             --test_split_file ${DATA_SOURCE}_split_0_test.txt \
+             --ml_data_outdir /candle_data_dir/HPO/LGBM/$DATA_SOURCE
+  )
+
+set -x
+time singularity exec --nv $A
+----
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-lgbm-1.sh
+----
+
+==== Output
+
+Supervisor creates output directories:
+
+. `D=$CANDLE_DATA_DIR/output/lgbm_0.6.0/EXP...`
+. `E=$CANDLE_DATA_DIR/lgbm_0.6.0/Output/EXP...`
+
+* Per-rank logs are in `$D/out/out-*.txt`
+* Model logs are in `$E/run_*/model.log`
+* DEAP output is in the 2nd-highest-rank `out-*.txt`
+
+==== Modifying
+
+* Edit settings in `test/cfg-lgbm-1.sh`
+* Edit hyperparameters in `data/lgbm_param_space-1.json`
