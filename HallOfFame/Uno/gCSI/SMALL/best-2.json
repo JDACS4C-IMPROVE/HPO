@@ -1,0 +1,8 @@
+{
+  "learning_rate": 5.2690764490771246e-06,
+  "batch_size": 64,
+  "epochs": 200,
+  "train_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/gCSI",
+  "val_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/gCSI",
+  "test_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/gCSI"
+}
