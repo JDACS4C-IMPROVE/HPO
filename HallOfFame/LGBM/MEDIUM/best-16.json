@@ -1,6 +1,0 @@
-{
-  "train_ml_data_dir": "/candle_data_dir/HPO/LGBM/gCSI",
-  "val_ml_data_dir": "/candle_data_dir/HPO/LGBM/gCSI",
-  "test_ml_data_dir": "/candle_data_dir/HPO/LGBM/gCSI",
-  "learning_rate": 0.13259753279843778
-}
