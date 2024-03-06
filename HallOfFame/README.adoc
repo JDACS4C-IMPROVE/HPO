@@ -9,7 +9,8 @@ All results created with the configurations in `HPO/tests/MODEL` unless otherwis
 
 These are our standardized HPO sizes.
 
-Population size started at `P`, and the HPO was run for `G` generations.
+Population size started at `P` (`POPULATION_SIZE`),
+and the HPO was run for `G` iterations (generations) (`NUM_ITERATIONS`).
 
 * *SMALL:*  Lambda:        P=4,  G=3
 * *MEDIUM:* Polaris Debug: P=16, G=4
