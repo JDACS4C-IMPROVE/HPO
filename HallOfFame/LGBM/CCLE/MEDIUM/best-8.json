@@ -1,0 +1,6 @@
+{
+  "train_ml_data_dir": "/candle_data_dir/HPO/LGBM/CCLE",
+  "val_ml_data_dir": "/candle_data_dir/HPO/LGBM/CCLE",
+  "test_ml_data_dir": "/candle_data_dir/HPO/LGBM/CCLE",
+  "learning_rate": 0.0877075660551307
+}
