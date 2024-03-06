@@ -7,11 +7,13 @@ All results created with the configurations in `HPO/tests/MODEL` unless otherwis
 
 == Campaigns
 
+These are our standardized HPO sizes.
+
 Population size started at `P`, and the HPO was run for `G` generations.
 
-* Lambda:  P=4, G=3
-* Polaris Debug: P=16, G=4
-* Polaris: P=80, G=10
+* *SMALL:*  Lambda:        P=4,  G=3
+* *MEDIUM:* Polaris Debug: P=16, G=4
+* *LARGE:*  Polaris:       P=80, G=10
 
 == Files
 
