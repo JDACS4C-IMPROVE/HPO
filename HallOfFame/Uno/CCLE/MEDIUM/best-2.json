@@ -1,0 +1,8 @@
+{
+  "learning_rate": 6.59813957413304e-06,
+  "batch_size": 16,
+  "epochs": 200,
+  "train_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/CCLE",
+  "val_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/CCLE",
+  "test_ml_data_dir": "/candle_data_dir/HPO/Uno_Improve/CCLE"
+}
