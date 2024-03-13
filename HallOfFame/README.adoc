@@ -20,6 +20,9 @@ and the HPO was run for `G` iterations (generations) (`NUM_ITERATIONS`).
 
 Each model result contains, for `N` as the 2nd largest rank (the rank running the DEAP algorithm):
 
+`metadata.txt`::
+Hostname, user, directory names, and other high-level metadata for the run.
+
 `cfg-hpo-settings.sh`::
 The input settings used for the test
 
