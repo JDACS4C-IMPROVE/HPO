@@ -39,7 +39,9 @@ The float value for the best fitness value for the case in `best-N.json`
 The DEAP stdout log
 
 `deap-N.log`::
-The DEAP log data structure- basically a table with per-iteration statistics
+The DEAP log data structure- basically a table with per-iteration statistics. Contains:
++
+* `gen`: DEAP generation
 
 `population-N.txt`::
 The JSON fragments for the population in the final iteration
