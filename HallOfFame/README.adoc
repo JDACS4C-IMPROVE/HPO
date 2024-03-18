@@ -67,6 +67,8 @@ https://github.com/emews/mela/tree/master/deap
 
 ==== Preprocess
 
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
 Set `CANDLE_DATA_DIR` and run:
 
 ----
@@ -107,3 +109,45 @@ Supervisor creates output directories:
 
 * Edit settings in `test/cfg-lgbm-1.sh`
 * Edit hyperparameters in `data/lgbm_param_space-1.json`
+
+=== Uno
+
+==== Preprocess
+
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-uno-1.sh
+----
+
+==== Output
+
+As for LGBM.
+
+==== Modifying
+
+* Edit settings in `test/cfg-uno-1.sh`
+* Edit hyperparameters in `data/uno_param_space-1.json`
+
+=== GraphDRP
+
+==== Preprocess
+
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-graphdrp-1.sh
+----
+
+==== Output
+
+As for LGBM.
+
+==== Modifying
+
+* Edit settings in `test/cfg-graphdrp-1.sh`
+* Edit hyperparameters in `data/graphdrp_param_space-3.json`
