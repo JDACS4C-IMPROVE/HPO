@@ -42,6 +42,9 @@ The DEAP stdout log
 The DEAP log data structure- basically a table with per-iteration statistics. Contains:
 +
 * `gen`: DEAP generation
+* `nevals`: Population size this generation
+* `avg`,`std`,`min`,`max`: The average/stddev/min/max of the loss metric in this generation
+* `ts`: The timestamp in seconds
 
 `population-N.txt`::
 The JSON fragments for the population in the final iteration
