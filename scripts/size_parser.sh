@@ -4,7 +4,7 @@
 # then plotting the results, users can gain an understanding of the level of efficacy of differently sized runs
 
 # Usage: ./size_parser.sh <directory-to-search-in> <file-to-put-in>
-# Examples usage: ./size_parser.sh .. compare_size.csv
+# Example usage: ./size_parser.sh .. compare_size.csv
 
 # The starting directory for the search
 SEARCH_DIR="$1"
