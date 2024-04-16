@@ -1,0 +1,9 @@
+train_ml_data_dir,val_ml_data_dir,model_outdir,batch_size,learning_rate,epochs,run_id,val_loss
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,1024,7.116265662662335e-05,100,run_01_001_0001,0.6353987455368042
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,32,0.009041520942666744,100,run_01_001_0003,0.008005253039300442
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,16,0.0019446877233942402,100,run_01_001_0002,0.008855216205120087
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,16,0.007681904210265114,100,run_01_001_0000,0.008908669464290142
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,16,0.0089134972747533,100,run_01_002_0000,0.00926361046731472
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,16,0.0010091173371852623,100,run_01_002_0001,0.00835760124027729
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,32,0.009041520942666744,100,run_01_003_0001,0.008149191737174988
+/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0,./out_model,32,0.0010091173371852623,100,run_01_003_0000,0.008653510361909866
