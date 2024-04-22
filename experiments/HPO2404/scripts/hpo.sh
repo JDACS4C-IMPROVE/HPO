@@ -34,4 +34,4 @@ echo "export MODEL=${MODEL}" > ${CONFIG}
 echo source_cfg -v ${SETTINGS} >> ${CONFIG}
 echo export CANDLE_MODEL_TYPE="SINGULARITY" >> ${CONFIG}
 echo export MODEL_NAME=${HPO_IMAGE_DIR}/${MODEL}.sif >> ${CONFIG}
-echo export PARAM_SET_FILE=${PATH_TO_CONFIG}/hyperparams-${MODEL}-${DATASET}.${TYPE}.json >> ${CONFIG}
+echo export PARAM_SET_FILE=${PATH_TO_CONFIG}/hyperparams.${MODEL}.${DATASET}.${TYPE}.json >> ${CONFIG}
