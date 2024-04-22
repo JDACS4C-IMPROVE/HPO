@@ -12,7 +12,8 @@ DIR=`dirname $(readlink -f $0)`
 
 
 
-CONFIG=${PATH_TO_CONFIG}/cfg-${TYPE}-settings.sh
+CONFIG=${PATH_TO_CONFIG}/cfg-${MODEL}-${DATASET}-${TYPE}-settings.sh
+SETTINGS=${PATH_TO_CONFIG}/cfg-${TYPE}-settings.sh
 
 if [ -f ${CONFIG} ]; then
     echo "Found existing Config, moving."
@@ -30,7 +31,7 @@ python ${DIR}/template2hyperparams.py --template ${PATH_TO_CONFIG}/hyperparams.t
 echo "Creating Config"
 # Write to config file
 echo "export MODEL=${MODEL}" > ${CONFIG}
-echo source_cfg -v ${CONFIG} >> ${CONFIG}
+echo source_cfg -v ${SETTINGS} >> ${CONFIG}
 echo export CANDLE_MODEL_TYPE="SINGULARITY" >> ${CONFIG}
 echo export MODEL_NAME=${HPO_IMAGE_DIR}/${MODEL}.sif >> ${CONFIG}
 echo export PARAM_SET_FILE=${PATH_TO_CONFIG}/hyperparams-${MODEL}-${DATASET}.json >> ${CONFIG}
