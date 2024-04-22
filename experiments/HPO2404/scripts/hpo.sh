@@ -12,7 +12,7 @@ DIR=`dirname $(readlink -f $0)`
 
 
 
-CONFIG=${PATH_TO_CONFIG}/cfg-${MODEL}-${DATASET}-${TYPE}-settings.sh
+CONFIG=${PATH_TO_CONFIG}/cfg-${MODEL}-${DATASET}-${TYPE}.sh
 SETTINGS=${PATH_TO_CONFIG}/cfg-${TYPE}-settings.sh
 
 if [ -f ${CONFIG} ]; then

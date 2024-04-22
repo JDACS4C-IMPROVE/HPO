@@ -27,7 +27,7 @@ DATASOURCES="gCSI CCLE CTRPv2 GDSCv1 GDSCv2"
         sh ${DIR}/hpo.sh $MODEL $d ${TYPE} ${EXPERIMENT_DIR}/configs/${MODEL}
         current_dir=$(pwd)
         cd ${EXPERIMENT_DIR}
-        time supervisor conda GA configs/IGTD/cfg-${MODEL}-${d}-${TYPE}.sh
+        time supervisor conda GA configs/IGTD/cfg-${MODEL}-${d}-${TYPE}.sh ${PATH_TO_CONFIG}/cfg-${MODEL}-${DATASET}-${TYPE}.sh
         cd $current_dir
     done
 
