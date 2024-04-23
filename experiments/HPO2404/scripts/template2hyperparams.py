@@ -69,6 +69,12 @@ def convert_template_to_hyperparams(template, dataset , model , hpo_run_type):
     hyperparams.append(val_ml_data_dir)
     hyperparams.append(test_ml_data_dir)
 
+    for arg in args:
+        key, value = arg.split('=')
+        hyperparams.append({"name": key, "type": "constant", "value": value})
+
+
+
     print(hyperparams)
 
         
@@ -81,6 +87,7 @@ def main():
     parser.add_argument('--dataset', type=str, help='Name of the dataset', required=True)
     parser.add_argument('--model', type=str, help='Name of the model', required=True)
     parser.add_argument('--type', type=str, help='HPO run type', choices=['small', 'medium' , 'large'] , dest="hpo_run_type", default="DEFAULT" ,required=True)
+    parser.add_argument('--args', type=str, nargs='*' , help='optional key=value', required=False , default=[])
     args = parser.parse_args()
 
     template_file = args.template
@@ -88,6 +95,7 @@ def main():
     dataset = args.dataset
     model = args.model
     hpo_run_type = args.hpo_run_type
+    args=args.args
 
     # Read the template file
     with open(template_file, 'r') as f:
@@ -95,7 +103,9 @@ def main():
 
     # Convert the template to hyperparameters
     hyperparams = convert_template_to_hyperparams(template, dataset, 
-                                                  model, hpo_run_type)
+                                                  model, hpo_run_type, args)
+
+
 
     # Write the hyperparameters to the output file
     with open(hyperparams_file, 'w') as f:
