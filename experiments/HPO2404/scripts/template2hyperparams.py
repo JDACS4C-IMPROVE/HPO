@@ -9,7 +9,7 @@ import argparse
 # In addition to the input and output files, the script also accepts an optional arguments to specify the name of the dataset
 
 
-def convert_template_to_hyperparams(template, dataset , model , hpo_run_type):
+def convert_template_to_hyperparams(template, dataset , model , hpo_run_type, args):
     hyperparams = template.copy()
 
     # Iterate over the template and convert it to hyperparameters
