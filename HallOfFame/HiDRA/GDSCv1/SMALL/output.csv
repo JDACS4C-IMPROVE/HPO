@@ -1,0 +1,9 @@
+train_ml_data_dir,val_ml_data_dir,model_outdir,batch_size,learning_rate,epochs,run_id,val_loss
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,1024,0.0068779141903081735,100,run_01_001_0002,0.008182292804121971
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,256,0.0035233398805833995,100,run_01_001_0001,0.007748929318040609
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,256,0.00025363280447445705,100,run_01_001_0003,0.00826072134077549
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,16,0.0060879360425192194,100,run_01_001_0000,0.007596262730658054
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,256,0.00025363280447445705,100,run_01_002_0001,0.008412537164986134
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,256,0.00025363280447445705,100,run_01_002_0000,0.008394886739552021
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,512,0.0010596582437678072,100,run_01_003_0001,0.008223559707403183
+/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,/tmp/weaverr/Data/HiDRA/Data/GDSCv1-GDSCv1/split_0,./out_model,256,0.0035364879320079804,100,run_01_003_0000,0.007823454216122627
