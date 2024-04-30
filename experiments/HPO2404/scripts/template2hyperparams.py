@@ -64,7 +64,7 @@ def convert_template_to_hyperparams(template, dataset , model , hpo_run_type, ar
         "value" : "/candle_data_dir/outputs/" + model + "/preprocess/" + dataset
     }
 
-    hyperparams.append(model_outdir)
+    #hyperparams.append(model_outdir)
     hyperparams.append(train_ml_data_dir)
     hyperparams.append(val_ml_data_dir)
     hyperparams.append(test_ml_data_dir)
