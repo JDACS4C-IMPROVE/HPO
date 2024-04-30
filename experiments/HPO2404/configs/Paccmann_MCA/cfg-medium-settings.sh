@@ -1,8 +1,8 @@
 echo SETTINGS
 
 # General Settings
-export PROCS=4
-export PPN=4
+export PROCS=10
+export PPN=10
 export WALLTIME=01:00:00
 export NUM_ITERATIONS=4
 export POPULATION_SIZE=16
@@ -23,7 +23,7 @@ export TOURNSIZE=4
 # you can save there. If not, make a directory in /tmp or somewhere else you can write.
 
 # Lambda Settings
-export CANDLE_CUDA_OFFSET=2
+#export CANDLE_CUDA_OFFSET=2
 # export CANDLE_DATA_DIR=/tmp/<user>/data_dir
 
 # Polaris Settings
