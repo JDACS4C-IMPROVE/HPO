@@ -1,0 +1,10 @@
+METADATA
+DATE=2024-05-03 09:16
+USER=wozniak
+HOSTNAME=polaris-login-01
+MODEL=GraphDRP
+SIZE=LARGE
+PARAMS=batch_size,learning_rate
+D=workflows/GA/experiments/EXP018
+DATASET=CCLE
+RANK=98
