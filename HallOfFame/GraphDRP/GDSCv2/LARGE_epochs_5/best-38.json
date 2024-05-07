@@ -1,0 +1,8 @@
+{
+  "learning_rate": 0.0006467449470523513,
+  "batch_size": 64,
+  "epochs": 5,
+  "train_ml_data_dir": "/eagle/Candle_ECP/wozniak/CDD/HPO/GraphDRP/GDSCv2",
+  "val_ml_data_dir": "/eagle/Candle_ECP/wozniak/CDD/HPO/GraphDRP/GDSCv2",
+  "test_ml_data_dir": "/eagle/Candle_ECP/wozniak/CDD/HPO/GraphDRP/GDSCv2"
+}

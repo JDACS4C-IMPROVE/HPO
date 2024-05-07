@@ -1,0 +1,10 @@
+METADATA
+DATE=2024-05-01 12:43
+USER=wozniak
+HOSTNAME=polaris-login-01
+MODEL=GraphDRP
+SIZE=LARGE
+PARAMS=batch_size,learning_rate
+D=/home/wozniak/proj/SV/workflows/GA/experiments/EXP001
+DATASET=GDSCv2
+RANK=398
