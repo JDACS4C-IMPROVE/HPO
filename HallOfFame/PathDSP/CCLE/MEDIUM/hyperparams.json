@@ -1,0 +1,39 @@
+[
+
+  {
+    "name": "train_ml_data_dir",
+    "type": "constant",
+    "value": "/tmp/weaverr/Data/PathDSP/Data/CCLE-CCLE/split_0"
+  },
+  {
+    "name": "val_ml_data_dir",
+    "type": "constant",
+    "value": "/tmp/weaverr/Data/PathDSP/Data/CCLE-CCLE/split_0"
+  },
+  {
+    "name": "model_outdir",
+    "type": "constant",
+    "value": "./out_model"
+  },
+
+  {
+    "name": "batch_size",
+    "type": "ordered",
+    "element_type": "int",
+    "values": [16, 32, 64, 128]
+  },
+  {
+    "name": "learning_rate",
+    "type": "float",
+    "use_log_scale": true,
+    "lower": 0.000001,
+    "upper": 0.001
+  },
+  {
+    "name": "dropout",
+    "type": "float",
+    "lower": 0.0,
+    "upper": 0.5
+  }
+
+]
