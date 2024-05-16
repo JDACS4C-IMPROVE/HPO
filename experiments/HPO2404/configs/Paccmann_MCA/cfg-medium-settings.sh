@@ -2,8 +2,8 @@ echo SETTINGS
 
 # General Settings
 export PROCS=10
-export PPN=10
-export WALLTIME=01:00:00
+export PPN=1
+export WALLTIME=04:00:00
 export NUM_ITERATIONS=4
 export POPULATION_SIZE=16
 
@@ -26,6 +26,17 @@ export TOURNSIZE=4
 #export CANDLE_CUDA_OFFSET=2
 # export CANDLE_DATA_DIR=/tmp/<user>/data_dir
 
+#TURBINE
+# Be sure to turn MPICH_GPU off!
+export TURBINE_PRELAUNCH="
+  module use /soft/modulefiles
+  module load conda
+  conda activate
+  source /lus/eagle/projects/Candle_ECP/conda/venv-2024-04-30/bin/activate
+  export MPICH_GPU_SUPPORT_ENABLED=0
+"
+
 # Polaris Settings
-# export QUEUE="debug"
-# export CANDLE_DATA_DIR=/home/<user>/data_dir
+export CANDLE_FRAMEWORK="pytorch"
+export QUEUE="prod"
+export CANDLE_DATA_DIR=/lus/eagle/projects/IMPROVE_Aim1/rjain/HPO/experiments/HPO2404
