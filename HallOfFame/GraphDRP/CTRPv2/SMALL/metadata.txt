@@ -1,0 +1,11 @@
+METADATA
+DATE=2024-03-19 10:22
+USER=woz
+HOSTNAME=lambda11
+MODEL=GraphDRP
+SIZE=SMALL
+PARAMS=learning_rate,batch_size
+D1=/homes/woz/CANDLE_DATA_DIR/output/GraphDRP/EXP040
+D2=/homes/woz/CANDLE_DATA_DIR/GraphDRP/Output/EXP040
+DATASET=CTRPv2
+RANK=1

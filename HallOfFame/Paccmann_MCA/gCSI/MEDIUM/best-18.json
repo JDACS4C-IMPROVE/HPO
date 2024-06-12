@@ -1,0 +1,10 @@
+{
+  "learning_rate": 7.092892399034623e-05,
+  "batch_size": 256,
+  "epochs": 100,
+  "dropout": 0.19443392777783708,
+  "train_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/gCSI",
+  "val_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/gCSI",
+  "test_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/gCSI",
+  "ml_data_outdir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/gCSI"
+}

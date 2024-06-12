@@ -1,0 +1,8 @@
+{
+  "train_ml_data_dir": "/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0",
+  "val_ml_data_dir": "/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0",
+  "model_outdir": "./out_model",
+  "batch_size": 128,
+  "learning_rate": 0.00024319069525915603,
+  "dropout": 0.1402260219015119
+}

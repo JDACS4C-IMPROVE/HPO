@@ -5,11 +5,24 @@ Best HPO results by model.
 
 All results created with the configurations in `HPO/tests/MODEL` unless otherwise noted.
 
-`pop4gen3` means the population size started at 4, and the HPO was run for 3 generations.  We will use this as a standard small debug test case.  We are running 2 epochs.
+== Campaigns
+
+These are our standardized HPO sizes.
+
+Population size started at `P` (`POPULATION_SIZE`),
+and the HPO was run for `G` iterations (generations) (`NUM_ITERATIONS`).
+
+* *SMALL:*  Lambda:        P=4,  G=3
+* *MEDIUM:* Polaris Debug: P=16, G=4
+* *LARGE:*  Polaris:       P=80, G=10
+* *XL:*     Polaris:       P=800, G=10
 
 == Files
 
 Each model result contains, for `N` as the 2nd largest rank (the rank running the DEAP algorithm):
+
+`metadata.txt`::
+Hostname, user, directory names, and other high-level metadata for the run.
 
 `cfg-hpo-settings.sh`::
 The input settings used for the test
@@ -27,10 +40,120 @@ The float value for the best fitness value for the case in `best-N.json`
 The DEAP stdout log
 
 `deap-N.log`::
-The DEAP log data structure- basically a table with per-iteration statistics
+The DEAP log data structure- basically a table with per-iteration statistics. Contains:
++
+* `gen`: DEAP generation
+* `nevals`: Population size this generation
+* `avg`,`std`,`min`,`max`: The average/stddev/min/max of the loss metric in this generation
+* `ts`: The timestamp in seconds
 
 `population-N.txt`::
 The JSON fragments for the population in the final iteration
 
 `fitnesses-N.txt`::
 The fitness floats for each member of the final population
+
+`hpo.csv`::
+From https://github.com/ECP-CANDLE/Supervisor/tree/develop/scripts#hpo-table
+
+== Plots
+
+We can reuse these tools:
+
+https://github.com/emews/mela/tree/master/deap
+
+== Examples
+
+=== Installation
+
+. Clone Supervisor branch `develop`
+. Add `Supervisor/bin` to `PATH`
+
+=== LGBM
+
+==== Preprocess
+
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
+Set `CANDLE_DATA_DIR` and run:
+
+----
+IMAGE=/software/improve/images/lgbm_0.6.0.sif
+RAW_DATA_DIR=$CANDLE_DATA_DIR
+DATA_SOURCE=gCSI
+
+A=( --bind ${RAW_DATA_DIR}:/candle_data_dir
+    ${IMAGE} preprocess.sh /candle_data_dir \
+             --train_split_file ${DATA_SOURCE}_split_0_train.txt \
+             --val_split_file ${DATA_SOURCE}_split_0_val.txt \
+             --test_split_file ${DATA_SOURCE}_split_0_test.txt \
+             --ml_data_outdir /candle_data_dir/HPO/LGBM/$DATA_SOURCE
+  )
+
+set -x
+time singularity exec --nv $A
+----
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-lgbm-1.sh
+----
+
+==== Output
+
+Supervisor creates output directories:
+
+. `D=$CANDLE_DATA_DIR/output/lgbm_0.6.0/EXP...`
+. `E=$CANDLE_DATA_DIR/lgbm_0.6.0/Output/EXP...`
+
+* Per-rank logs are in `$D/out/out-*.txt`
+* Model logs are in `$E/run_*/model.log`
+* DEAP output is in the 2nd-highest-rank `out-*.txt`
+
+==== Modifying
+
+* Edit settings in `test/cfg-lgbm-1.sh`
+* Edit hyperparameters in `data/lgbm_param_space-1.json`
+
+=== Uno
+
+==== Preprocess
+
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-uno-1.sh
+----
+
+==== Output
+
+As for LGBM.
+
+==== Modifying
+
+* Edit settings in `test/cfg-uno-1.sh`
+* Edit hyperparameters in `data/uno_param_space-1.json`
+
+=== GraphDRP
+
+==== Preprocess
+
+See https://github.com/ECP-CANDLE/Supervisor/blob/develop/scripts/preprocess.sh
+
+==== Run
+
+----
+$ supervisor lambda GA cfg-graphdrp-1.sh
+----
+
+==== Output
+
+As for LGBM.
+
+==== Modifying
+
+* Edit settings in `test/cfg-graphdrp-1.sh`
+* Edit hyperparameters in `data/graphdrp_param_space-3.json`

@@ -1,6 +1,11 @@
-source_cfg -v tests/tCNNS/cfg-hpo-settings.sh
+
+export MODEL_NAME=${HPO_IMAGE_DIR}/tCNNS.sif
+
+MODEL=$(basename $MODEL_NAME .sif)
 
 export CANDLE_MODEL_TYPE="SINGULARITY"
-export MODEL_NAME=${IMAGE_PATH}/tCNNS.sif
-export PARAM_SET_FILE=tests/tCNNS/hpo-parameter-space.json
+export PARAM_SET_FILE=${HPO_BASE_DIR}/tests/${MODEL}/hpo-parameter-space.json
+export CANDLE_DATA_DIR=${HPO_DATA_DIR}/${MODEL}
 
+mkdir -p ${CANDLE_DATA_DIR}
+source_cfg -v ${HPO_BASE_DIR}/tests/${MODEL}/cfg-hpo-settings.sh

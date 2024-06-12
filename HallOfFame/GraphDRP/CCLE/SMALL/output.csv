@@ -1,0 +1,9 @@
+train_ml_data_dir,val_ml_data_dir,model_outdir,epochs,batch_size,learning_rate,run_id,val_loss
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,32,0.0006959453040606565,run_01_001_0001,0.005018932279199362
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,128,0.00040657908751752644,run_01_001_0003,0.005010282155126333
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,32,0.0005143552048937004,run_01_001_0000,0.004838213324546814
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,1024,0.0009709071772870089,run_01_001_0002,0.005613098852336407
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,1024,0.0009709071772870089,run_01_002_0001,0.005720264744013548
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,32,0.0005143552048937004,run_01_002_0000,0.004893588367849588
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,32,0.0005240753130878345,run_01_003_0001,0.005059539806097746
+/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0,/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0,100,128,0.00040657908751752644,run_01_003_0000,0.0050217523239552975

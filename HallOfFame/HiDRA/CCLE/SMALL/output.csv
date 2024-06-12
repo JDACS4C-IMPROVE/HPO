@@ -1,0 +1,9 @@
+train_ml_data_dir,val_ml_data_dir,model_outdir,batch_size,learning_rate,epochs,run_id,val_loss
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,1024,0.002016855770539806,100,run_01_001_0001,0.006113272625952959
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,512,0.008247456138367686,100,run_01_001_0002,0.005681373178958893
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,1024,0.0044375198512494815,100,run_01_001_0000,0.008371629752218723
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,64,0.007146145764996366,100,run_01_001_0003,0.0050316439010202885
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,1024,0.006160891355352017,100,run_01_002_0000,0.006948835216462612
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,1024,0.005534179203645632,100,run_01_002_0001,0.006104970350861549
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,64,0.007146145764996366,100,run_01_003_0000,0.005048990715295076
+/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,/tmp/weaverr/Data/HiDRA/Data/CCLE-CCLE/split_0,./out_model,64,0.007146145764996366,100,run_01_003_0001,0.005046236328780651

@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.00019306380321264862,
+  "batch_size": 512,
+  "epochs": 100,
+  "dropout": 0.042623298170515196,
+  "train_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/CCLE",
+  "val_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/CCLE",
+  "test_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/CCLE",
+  "ml_data_outdir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/CCLE"
+}

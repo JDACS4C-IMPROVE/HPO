@@ -1,0 +1,8 @@
+{
+  "train_ml_data_dir": "/tmp/weaverr/Data/PathDSP/Data/CCLE-CCLE/split_0",
+  "val_ml_data_dir": "/tmp/weaverr/Data/PathDSP/Data/CCLE-CCLE/split_0",
+  "model_outdir": "./out_model",
+  "batch_size": 64,
+  "learning_rate": 9.043143432931976e-05,
+  "dropout": 0.0
+}

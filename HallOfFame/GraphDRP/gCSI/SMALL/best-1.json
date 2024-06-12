@@ -1,0 +1,8 @@
+{
+  "learning_rate": 0.09738432231409588,
+  "batch_size": 64,
+  "epochs": 100,
+  "train_ml_data_dir": "/candle_data_dir/HPO/GraphDRP/gCSI",
+  "val_ml_data_dir": "/candle_data_dir/HPO/GraphDRP/gCSI",
+  "test_ml_data_dir": "/candle_data_dir/HPO/GraphDRP/gCSI"
+}

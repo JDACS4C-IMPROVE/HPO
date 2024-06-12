@@ -1,0 +1,8 @@
+{
+  "train_ml_data_dir": "/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0",
+  "val_ml_data_dir": "/tmp/weaverr/Data/ml_data/GraphDRP/CCLE-CCLE/split_0",
+  "model_outdir": "/tmp/weaverr/Data/out_models/GraphDRP/CCLE/split_0",
+  "epochs": 100,
+  "batch_size": 32,
+  "learning_rate": 0.0005143552048937004
+}

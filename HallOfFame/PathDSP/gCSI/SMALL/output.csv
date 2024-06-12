@@ -1,0 +1,9 @@
+train_ml_data_dir,val_ml_data_dir,model_outdir,batch_size,learning_rate,dropout,run_id,val_loss
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,64,0.00046246092684229913,0.26148719278189975,run_01_001_0002,0.004203452306154067
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,64,0.0007372988497072718,0.45626615601058007,run_01_001_0001,0.004389288294967534
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,128,0.0006589203685660343,0.057880215898515386,run_01_001_0003,0.004066642815677356
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,64,0.0009373787635872063,0.1943928238937963,run_01_001_0000,0.00438552672559533
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,64,0.00046246092684229913,0.26148719278189975,run_01_002_0000,0.004203452306154067
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,128,0.0006589203685660343,0.07395667693433727,run_01_002_0001,0.0041539406335138855
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,64,0.000697151025323232,0.07395667693433727,run_01_003_0000,0.004245888849408107
+/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,/tmp/weaverr/Data/PathDSP/Data/gCSI-gCSI/split_0,./out_model,128,0.0005738887465671069,0.07395667693433727,run_01_003_0001,0.004152329452661653

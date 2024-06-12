@@ -1,0 +1,8 @@
+{
+  "train_ml_data_dir": "/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0",
+  "val_ml_data_dir": "/tmp/weaverr/Data/HiDRA/Data/gCSI-gCSI/split_0",
+  "model_outdir": "./out_model",
+  "batch_size": 32,
+  "learning_rate": 0.009041520942666744,
+  "epochs": 100
+}

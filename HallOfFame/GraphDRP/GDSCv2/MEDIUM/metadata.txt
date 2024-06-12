@@ -1,0 +1,12 @@
+METADATA
+DATE=2024-05-16 15:13
+USER=wozniak
+HOSTNAME=polaris-login-04
+MODEL=graphdrp
+SIZE=MEDIUM
+PARAMS=batch_size,learning_rate
+D=/eagle/Candle_ECP/wozniak/CDD/graphdrp/Output/EXP038
+DATASET=GDSCv2
+RANK=14
+2024-05-15 16:49:07 DEAP INFO  num_iter:    4
+2024-05-15 16:49:07 DEAP INFO  num_pop:    32
