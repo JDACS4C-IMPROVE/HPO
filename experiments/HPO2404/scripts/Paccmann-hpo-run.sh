@@ -22,8 +22,8 @@ CANDLE_INPUT_DIR=${CANDLE_BASE_DIR}/raw_data
 
 
 #DATASOURCES="gCSI CCLE GDSCv2 GDSCv1 CTRPv2"
-DATASOURCES="CTRPv2"
- for TYPE in small; do
+DATASOURCES="CCLE GDSCv1 GDSCv2 CTRPv2"
+ for TYPE in medium; do
     for d in ${DATASOURCES} ; do
         sh ${DIR}/Paccmann-hpo-config.sh $MODEL $d ${TYPE} ${EXPERIMENT_DIR}/configs/${MODEL}
         current_dir=$(pwd)

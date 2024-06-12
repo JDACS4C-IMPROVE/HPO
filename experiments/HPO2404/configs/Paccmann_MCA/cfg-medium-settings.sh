@@ -1,9 +1,9 @@
 echo SETTINGS
 
 # General Settings
-export PROCS=10
+export PROCS=26
 export PPN=1
-export WALLTIME=04:00:00
+export WALLTIME=5:59:00
 export NUM_ITERATIONS=4
 export POPULATION_SIZE=16
 

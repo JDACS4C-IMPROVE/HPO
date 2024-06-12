@@ -1,9 +1,9 @@
 echo SETTINGS
 
 # General Settings
-export PROCS=4
-export PPN=2
-export WALLTIME=00:59:00
+export PROCS=25
+export PPN=1
+export WALLTIME=05:59:00
 export NUM_ITERATIONS=3
 export POPULATION_SIZE=4
 export CANDLE_FRAMEWORK="pytorch"
@@ -38,5 +38,5 @@ export TURBINE_PRELAUNCH="
 "
 
 # Polaris Settings
-export QUEUE="debug"
+export QUEUE="prod"
 export CANDLE_DATA_DIR=/lus/eagle/projects/IMPROVE_Aim1/rjain/HPO/experiments/HPO2404

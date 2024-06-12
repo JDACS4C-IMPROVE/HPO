@@ -12,7 +12,7 @@
     "name": "batch_size",
     "type": "ordered",
     "element_type": "int",
-    "values": [8, 16, 32, 64, 128, 256, 512, 1028],
+    "values": [64, 128, 256, 512, 1028],
     "sigma": 1
   },
 

@@ -1,0 +1,13 @@
+METADATA
+DATE=2024-06-12 22:08
+USER=rjain
+HOSTNAME=polaris-login-01
+MODEL=Paccmann_MCA
+SIZE=MEDIUM
+PARAMS=batch_size,learning_rate
+D1=.
+D2=.
+DATASET=CCLE
+RANK=24
+2024-06-05 01:57:12 DEAP INFO  num_iter:    4
+2024-06-05 01:57:12 DEAP INFO  num_pop:    16
