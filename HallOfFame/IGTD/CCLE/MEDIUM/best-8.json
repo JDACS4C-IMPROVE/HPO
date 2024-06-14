@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.00044116909746320135,
+  "batch_size": 16,
+  "epochs": 100,
+  "dropout": 0.04248378027811003,
+  "model_outdir": "/candle_data_dir/outputs/IGTD/supervisor/CCLE/medium",
+  "train_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CCLE",
+  "val_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CCLE",
+  "test_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CCLE"
+}

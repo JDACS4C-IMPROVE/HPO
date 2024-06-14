@@ -1,0 +1,57 @@
+[
+    {
+        "name": "learning_rate",
+        "type": "float",
+        "lower": 1e-06,
+        "upper": 0.001,
+        "sigma": 5e-05
+    },
+    {
+        "name": "batch_size",
+        "type": "ordered",
+        "element_type": "int",
+        "values": [
+            8,
+            16,
+            32,
+            64,
+            128,
+            256,
+            512,
+            1028
+        ],
+        "sigma": 1
+    },
+    {
+        "name": "epochs",
+        "type": "constant",
+        "value": 100
+    },
+    {
+        "name": "dropout",
+        "type": "float",
+        "lower": 0,
+        "upper": 0.3,
+        "sigma": 0.1
+    },
+    {
+        "name": "model_outdir",
+        "type": "constant",
+        "value": "/candle_data_dir/outputs/IGTD/supervisor/CTRPv2/medium"
+    },
+    {
+        "name": "train_ml_data_dir",
+        "type": "constant",
+        "value": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2"
+    },
+    {
+        "name": "val_ml_data_dir",
+        "type": "constant",
+        "value": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2"
+    },
+    {
+        "name": "test_ml_data_dir",
+        "type": "constant",
+        "value": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2"
+    }
+]

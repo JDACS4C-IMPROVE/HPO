@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.0005972513705834527,
+  "batch_size": 16,
+  "epochs": 100,
+  "dropout": 0.16002605322715852,
+  "model_outdir": "/candle_data_dir/outputs/IGTD/supervisor/GDSCv2/small",
+  "train_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/GDSCv2",
+  "val_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/GDSCv2",
+  "test_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/GDSCv2"
+}

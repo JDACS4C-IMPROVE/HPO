@@ -1,0 +1,13 @@
+METADATA
+DATE=2024-06-14 09:48
+USER=jain
+HOSTNAME=lambda0
+MODEL=IGTD
+SIZE=SMALL
+PARAMS=batch_size,learning_rate
+D1=.
+D2=.
+DATASET=GDSCv1
+RANK=8
+2024-04-30 16:26:54 DEAP INFO  num_iter:    3
+2024-04-30 16:26:54 DEAP INFO  num_pop:     4

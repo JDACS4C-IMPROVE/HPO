@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.0008434053110179821,
+  "batch_size": 32,
+  "epochs": 100,
+  "dropout": 0.1846201261420741,
+  "model_outdir": "/candle_data_dir/outputs/IGTD/supervisor/gCSI/medium",
+  "train_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/gCSI",
+  "val_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/gCSI",
+  "test_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/gCSI"
+}

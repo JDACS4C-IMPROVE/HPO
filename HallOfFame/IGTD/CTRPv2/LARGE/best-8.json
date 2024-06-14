@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.00013105289476185846,
+  "batch_size": 8,
+  "epochs": 100,
+  "dropout": 0.045859024848875427,
+  "model_outdir": "/candle_data_dir/outputs/IGTD/supervisor/CTRPv2/large",
+  "train_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2",
+  "val_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2",
+  "test_ml_data_dir": "/candle_data_dir/outputs/IGTD/preprocess/CTRPv2"
+}
