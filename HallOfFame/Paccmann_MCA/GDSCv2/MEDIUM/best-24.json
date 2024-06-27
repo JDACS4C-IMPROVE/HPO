@@ -1,0 +1,10 @@
+{
+  "learning_rate": 0.00010468988102446662,
+  "batch_size": 128,
+  "epochs": 25,
+  "dropout": 0.07576049738654995,
+  "train_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/GDSCv2",
+  "val_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/GDSCv2",
+  "test_ml_data_dir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/GDSCv2",
+  "ml_data_outdir": "/candle_data_dir/outputs/Paccmann_MCA/preprocess/GDSCv2"
+}
