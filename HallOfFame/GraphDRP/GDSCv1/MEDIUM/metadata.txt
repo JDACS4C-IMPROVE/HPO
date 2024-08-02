@@ -1,0 +1,13 @@
+METADATA
+DATE=2024-08-02 03:21
+USER=rjain
+HOSTNAME=polaris-login-02
+MODEL=GraphDRP
+SIZE=MEDIUM
+PARAMS=batch_size,learning_rate
+D1=.
+D2=.
+DATASET=GDSCv1
+RANK=24
+2024-08-02 01:47:02 DEAP INFO  num_iter:    4
+2024-08-02 01:47:02 DEAP INFO  num_pop:    16
